@@ -42,17 +42,23 @@ These methods exploit low-rank structure to significantly reduce the cost of tra
 Projection matrices are one of the cleanest ways to formalize the idea of reducing high-dimensional data to a lower-dimensional subspace while preserving as much useful structure as possible. This makes them a natural mathematical tool for later studying low-rank approximation, compression, and efficient computation.
 
 Let $V \in \mathbb{R}^{d \times k}$ be a matrix with orthonormal columns:
+
 $$
 V = [v_1,\dots,v_k], \qquad V^T V = I_k.
 $$
+
 The columns of $V$ span a $k$-dimensional subspace
+
 $$
 \mathcal{V} = \operatorname{span}(v_1,\dots,v_k) \subseteq \mathbb{R}^d.
 $$
+
 The matrix
+
 $$
 P = VV^T
 $$
+
 is the projection matrix onto $\mathcal{V}$.
 
 <p align="center">
